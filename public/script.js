@@ -11,12 +11,40 @@ document.addEventListener('DOMContentLoaded', () => {
         chatBox.scrollTop = chatBox.scrollHeight;
     }
 
+    function showTypingIndicator() {
+        const typingIndicator = document.createElement('div');
+        typingIndicator.id = 'typing-indicator';
+        typingIndicator.classList.add('message', 'bot-message');
+        typingIndicator.innerHTML = `
+            <div class="typing-indicator-content">
+                <span>Aidy 正在輸入訊息</span>
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        `;
+        chatBox.appendChild(typingIndicator);
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    function removeTypingIndicator() {
+        const typingIndicator = document.getElementById('typing-indicator');
+        if (typingIndicator) {
+            typingIndicator.remove();
+        }
+    }
+
     async function sendMessage() {
         const message = userInput.value.trim();
         if (message === '') return;
 
         addMessage(message, 'user');
         userInput.value = '';
+        sendBtn.disabled = true;
+
+        showTypingIndicator();
 
         try {
             const response = await fetch('/api/chat', {
@@ -26,6 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 body: JSON.stringify({ message }),
             });
+            
+            removeTypingIndicator();
 
             if (!response.ok) {
                 throw new Error(`伺服器錯誤: ${response.status}`);
@@ -36,7 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         } catch (error) {
             console.error('傳送訊息時發生錯誤:', error);
+            removeTypingIndicator();
             addMessage('糟糕，好像有點問題，請稍後再試一次。', 'bot');
+        } finally {
+            sendBtn.disabled = false;
         }
     }
 
@@ -48,5 +81,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 初始歡迎訊息
-    addMessage('嗨！我是 Aidy，你的專屬侍酒師。想喝點什麼樣的調酒呢？可以告訴我你喜歡的口味喔！', 'bot');
+    addMessage('哈囉！想喝點什麼嗎？告訴我你喜歡的口味，讓我來為你推薦！', 'bot');
 }); 

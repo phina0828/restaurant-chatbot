@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aidy's Bar - 虛擬侍酒師</title>
+    <title>與 Aidy 聊聊</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,15 +12,17 @@
 <body>
     <div class="chat-container">
         <div class="chat-header">
-            <h1>Aidy's Bar</h1>
-            <p>您的虛擬侍酒師</p>
+            <h1>與 Aidy 聊聊</h1>
+            <p>您的 AI 侍酒師</p>
         </div>
         <div class="chat-box" id="chat-box">
             <!-- 聊天訊息會顯示在這裡 -->
         </div>
         <div class="chat-input">
-            <input type="text" id="user-input" placeholder="想喝點什麼呢？跟 Aidy 聊聊吧...">
-            <button id="send-btn">傳送</button>
+            <input type="text" id="user-input" placeholder="說說你想喝的感覺...">
+            <button id="send-btn" title="傳送">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path></svg>
+            </button>
         </div>
     </div>
     <script src="script.js"></script>
