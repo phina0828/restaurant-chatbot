@@ -1,0 +1,110 @@
+[
+  {
+    "id": "classic-martini",
+    "name": "經典馬丁尼 (Classic Martini)",
+    "price": 320,
+    "base": "琴酒",
+    "strength": "高",
+    "tags": ["琴酒", "烈", "經典", "草本"],
+    "description": "永恆的經典，乾淨俐落的琴酒風味，帶有一絲苦艾酒的草本香氣。適合喜歡烈酒純粹風味的你。"
+  },
+  {
+    "id": "whiskey-sour",
+    "name": "威士忌酸酒 (Whiskey Sour)",
+    "price": 300,
+    "base": "威士忌",
+    "strength": "中",
+    "tags": ["威士忌", "酸", "甜", "柑橘", "經典"],
+    "description": "波本威士忌的溫潤甜感，與新鮮檸檬的酸度完美平衡，口感滑順，是威士忌入門的好選擇。"
+  },
+  {
+    "id": "mojito",
+    "name": "莫希托 (Mojito)",
+    "price": 280,
+    "base": "蘭姆酒",
+    "strength": "低",
+    "tags": ["蘭姆酒", "清爽", "酸", "甜", "薄荷", "氣泡"],
+    "description": "來自古巴的夏日氣息！新鮮薄荷與檸檬、蘭姆酒的完美結合，加上沁涼的蘇打水，清爽無負擔。"
+  },
+  {
+    "id": "margarita",
+    "name": "瑪格麗特 (Margarita)",
+    "price": 300,
+    "base": "龍舌蘭",
+    "strength": "中",
+    "tags": ["龍舌蘭", "酸", "鹹", "柑橘"],
+    "description": "龍舌蘭的獨特風味，搭配君度橙酒的香甜與檸檬的酸，杯口的鹽霜是它的靈魂，充滿墨西哥風情。"
+  },
+  {
+    "id": "old-fashioned",
+    "name": "古典雞尾酒 (Old Fashioned)",
+    "price": 350,
+    "base": "威士忌",
+    "strength": "高",
+    "tags": ["威士忌", "烈", "甜", "柑橘", "經典"],
+    "description": "這杯是威士忌愛好者的最愛。方糖、苦精、與威士忌的簡單組合，更能凸顯威士忌本身的醇厚風味與陳皮香氣。"
+  },
+  {
+    "id": "negroni",
+    "name": "尼格羅尼 (Negroni)",
+    "price": 330,
+    "base": "琴酒",
+    "strength": "高",
+    "tags": ["琴酒", "烈", "苦", "甜", "草本"],
+    "description": "一杯成熟大人的味道。琴酒、金巴利、甜苦艾酒各一，帶來完美的苦甜平衡與複雜的藥草風味。"
+  },
+  {
+    "id": "gin-tonic",
+    "name": "琴通寧 (Gin & Tonic)",
+    "price": 260,
+    "base": "琴酒",
+    "strength": "低",
+    "tags": ["琴酒", "清爽", "氣泡", "草本"],
+    "description": "簡單卻不凡。優質的琴酒搭配清爽的通寧水，最後用檸檬或小黃瓜點綴，帶出琴酒的杜松子香氣。"
+  },
+  {
+    "id": "cosmopolitan",
+    "name": "柯夢波丹 (Cosmopolitan)",
+    "price": 300,
+    "base": "伏特加",
+    "strength": "中",
+    "tags": ["伏特加", "酸", "甜", "果香", "蔓越莓"],
+    "description": "慾望城市裡的經典酒款！伏特加、君度、蔓越莓汁和檸檬汁的組合，呈現漂亮的粉紅色澤，酸甜又時髦。"
+  },
+  {
+    "id": "espresso-martini",
+    "name": "濃縮咖啡馬丁尼 (Espresso Martini)",
+    "price": 320,
+    "base": "伏特加",
+    "strength": "中",
+    "tags": ["伏特加", "甜", "咖啡", "提神"],
+    "description": "需要提神嗎？來一杯吧！新鮮的濃縮咖啡、咖啡利口酒與伏特加的結合，口感濃郁，充滿咖啡香氣。"
+  },
+  {
+    "id": "singapore-sling",
+    "name": "新加坡司令 (Singapore Sling)",
+    "price": 350,
+    "base": "琴酒",
+    "strength": "中",
+    "tags": ["琴酒", "酸", "甜", "果香", "熱帶"],
+    "description": "充滿熱帶風情的多層次調酒。以琴酒為基底，加入鳳梨汁、櫻桃白蘭地等多種材料，風味豐富，甜中帶酸。"
+  },
+  {
+    "id": "penicillin",
+    "name": "盤尼西林 (Penicillin)",
+    "price": 360,
+    "base": "威士忌",
+    "strength": "中",
+    "tags": ["威士忌", "煙燻", "薑", "蜂蜜", "酸"],
+    "description": "現代經典之一。混合兩種蘇格蘭威士忌，帶有獨特的煙燻味，並以蜂蜜和生薑糖漿增添甜與辛辣的層次。"
+  },
+  {
+    "id": "aperol-spritz",
+    "name": "艾普羅香甜酒 (Aperol Spritz)",
+    "price": 280,
+    "base": "氣泡酒",
+    "strength": "低",
+    "tags": ["氣泡酒", "清爽", "苦", "甜", "氣泡", "餐前酒"],
+    "description": "義大利的國民餐前酒！Aperol 的微苦與柑橘香，搭配 Prosecco 氣泡酒的果香，再加上蘇打水，清爽開胃。"
+  }
+] 

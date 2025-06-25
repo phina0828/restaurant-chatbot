@@ -1,0 +1,21 @@
+{
+  "name": "restaurant-chatbot",
+  "version": "1.0.0",
+  "description": "A chatbot for a restaurant to help users choose a drink.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chatbot",
+    "restaurant",
+    "openai"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "openai": "^4.52.7"
+  }
+} 
