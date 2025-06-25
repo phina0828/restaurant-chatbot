@@ -129,6 +129,7 @@ body {
     font-size: 1rem;
     font-family: var(--font-family);
     transition: background-color 0.3s;
+    min-width: 0;
 }
 
 #user-input:focus {
