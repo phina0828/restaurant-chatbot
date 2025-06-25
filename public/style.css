@@ -195,4 +195,26 @@ body {
     0% { opacity: 0.2; transform: scale(1); }
     20% { opacity: 1; transform: scale(1.2); }
     100% { opacity: 0.2; transform: scale(1); }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+
+    .chat-container {
+        height: 100%;
+        max-height: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .chat-box {
+        padding: 15px;
+    }
+
+    .chat-input {
+        padding: 10px 15px;
+    }
 } 
